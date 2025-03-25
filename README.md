@@ -106,12 +106,14 @@ print(y_prednew)
 
 
 ## Dataset.dtypes
-![image](https://github.com/user-attachments/assets/103b4ecd-a23c-4255-8e08-b8682722f085)
-## Dataset
-![image](https://github.com/user-attachments/assets/3ae17d3a-09bb-4293-9afc-1958cedb8a31)
+![image](https://github.com/user-attachments/assets/a301c034-3151-413c-b8a3-773cf0ebcdaf)
 
-## 
-![image](https://github.com/user-attachments/assets/457282f4-f8e1-4b8c-be59-5fea7757f452)
+## Dataset
+![image](https://github.com/user-attachments/assets/6952986b-ae30-4f05-98cb-040ed60b5a66)
+
+
+## Y
+![image](https://github.com/user-attachments/assets/103b4ecd-a23c-4255-8e08-b8682722f085)
 
 ## Accuracy
 ![image](https://github.com/user-attachments/assets/77dd10dc-c7d9-4a26-94ec-e16e0c2fb0b3)
