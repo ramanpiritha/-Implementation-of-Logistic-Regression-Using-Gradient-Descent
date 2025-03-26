@@ -1,4 +1,4 @@
-# Implementation-of-Logistic-Regression-Using-Gradient-Descent
+# Ex.No-06-Implementation-of-Logistic-Regression-Using-Gradient-Descent
 
 ## AIM:
 To write a program to implement the the Logistic Regression Using Gradient Descent.
@@ -22,12 +22,10 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 
 ## Program:
 
-```
-Program to implement the the Logistic Regression Using Gradient Descent.
+``` 
+ Developed by: Piritharaman R
  
- Developed by: G.HINDHU
- 
- RegisterNumber:  212223230079
+ RegisterNumber:  212223230148
 ```
 
 
@@ -38,7 +36,10 @@ import matplotlib.pyplot as plt
 
 dataset=pd.read_csv("C:/Users/admin/Downloads/Placement_Data.csv")
 dataset
-
+```
+## Output:
+![image](https://github.com/user-attachments/assets/13598c70-0ee8-46e2-9487-36b8a3ec9747)
+```
 dataset=dataset.drop('sl_no',axis=1)
 dataset=dataset.drop('salary',axis=1)
 
@@ -51,7 +52,9 @@ dataset["specialisation"]=dataset["specialisation"].astype('category')
 dataset["status"]=dataset["status"].astype('category')
 dataset["hsc_s"]=dataset["hsc_s"].astype('category')
 dataset.dtypes
-
+```
+![image](https://github.com/user-attachments/assets/31f80549-1cd3-46b1-b660-2d800ec42eae)
+```
 dataset["gender"]=dataset["gender"].cat.codes
 dataset["ssc_b"]=dataset["ssc_b"].cat.codes
 dataset["hsc_b"]=dataset["hsc_b"].cat.codes
@@ -62,12 +65,15 @@ dataset["status"]=dataset["status"].cat.codes
 dataset["hsc_s"]=dataset["hsc_s"].cat.codes
 
 dataset
-
+```
+![image](https://github.com/user-attachments/assets/9bea160c-8de2-4cf2-a0f2-12613af451f4)
+```
 X=dataset.iloc[:,:-1].values
 Y=dataset.iloc[:,-1].values
-
 Y
-
+```
+![image](https://github.com/user-attachments/assets/769482d6-298e-433d-b0ab-62f67f1b46a6)
+```
 theta=np.random.randn(X.shape[1])
 y=Y
 def sigmoid(z):
@@ -96,50 +102,28 @@ y_pred=predict(theta,X)
 
 accuracy=np.mean(y_pred.flatten()==y)
 print("Accuracy:",accuracy)
-
+```
+![image](https://github.com/user-attachments/assets/8b571dc1-5ede-47da-9df9-7ac8782cfdb0)
+```
 print(y_pred)
-
+```
+![image](https://github.com/user-attachments/assets/4a33f83b-dd60-4b8f-b984-1f2968540e77)
+```
 print(Y)
-
+```
+![image](https://github.com/user-attachments/assets/63d79797-923c-4242-bf9d-e5ea2b013e2d)
+```
 xnew=np.array([[0,87,0,95,0,2,78,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
-
+```
+![image](https://github.com/user-attachments/assets/481a16ab-0007-42cd-b2aa-fbdb9bdb681d)
+```
 xnew=np.array([[0,0,0,0,0,2,8,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
 ```
-## Output:
-## Dataset
-
-![image](https://github.com/user-attachments/assets/99b29920-0894-496f-bf26-54fb8f273971)
-
-
-## Dataset.dtypes
-![image](https://github.com/user-attachments/assets/a301c034-3151-413c-b8a3-773cf0ebcdaf)
-
-## Dataset
-![image](https://github.com/user-attachments/assets/6952986b-ae30-4f05-98cb-040ed60b5a66)
-
-
-## Y
-![image](https://github.com/user-attachments/assets/103b4ecd-a23c-4255-8e08-b8682722f085)
-
-## Accuracy
-![image](https://github.com/user-attachments/assets/77dd10dc-c7d9-4a26-94ec-e16e0c2fb0b3)
-
-## Y_pred
-![image](https://github.com/user-attachments/assets/f89ec6c8-1ea3-4e37-8932-ecda2d57f9b6)
-
-## Y
-![image](https://github.com/user-attachments/assets/2d8606df-5b19-4860-985d-0e03caf1f92d)
-
-## Y_prednew
-.![image](https://github.com/user-attachments/assets/c88c1298-57c5-4535-9411-2b3a788e85bc)
-
-## Y_prednew
-![image](https://github.com/user-attachments/assets/666a54ec-34bf-4c3b-bf93-a90789eb10f7)
-
+![image](https://github.com/user-attachments/assets/24e13c63-7694-43e4-b599-2153d9733e36)
 
 
 ## Result:
